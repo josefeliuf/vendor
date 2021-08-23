@@ -8,7 +8,6 @@ endif
 
 ifeq ($(strip $(MIDGARD_ARCH_)),x86_64)
 
-include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libGLES_mali.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -27,7 +26,6 @@ LOCAL_POST_INSTALL_CMD = $(hide)\
 include $(BUILD_PREBUILT)
 
 #gralloc
-include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE := gralloc.$(TARGET_BOARD_PLATFORM).so
@@ -43,7 +41,6 @@ LOCAL_SRC_FILES_64 :=  usr/sp9853i/gralloc.midgard_64.so
 include $(BUILD_PREBUILT)
 
 #OpenCL
-include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libRSDriverArm.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -55,7 +52,6 @@ LOCAL_SRC_FILES_64 :=  usr/sp9853i/libRSDriverArm_64.so
 
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libbccArm.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -68,7 +64,6 @@ LOCAL_SRC_FILES_64 :=  usr/sp9853i/libbccArm_64.so
 include $(BUILD_PREBUILT)
 
 
-include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libmalicore.bc
 LOCAL_MODULE_OWNER := arm
@@ -105,7 +100,6 @@ $(warning  "GPU sharkl2: include $(LOCAL_PATH)/midgard_arm64.mk")
 include  $(LOCAL_PATH)/midgard_arm64.mk
 
 else
-include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libGLES_mali.so
@@ -131,7 +125,6 @@ LOCAL_POST_INSTALL_CMD = $(hide)\
 include $(BUILD_PREBUILT)
 
 #hw
-include $(CLEAR_VARS)
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE_TAGS := optional
 ifeq ($(strip $(TARGET_BOARD_PLATFORM)),)
@@ -152,7 +145,6 @@ endif
 include $(BUILD_PREBUILT)
 
 #OpenCL
-include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libRSDriverArm.so
@@ -167,7 +159,6 @@ endif
 include $(BUILD_PREBUILT)
 
 
-include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libbccArm.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -180,7 +171,6 @@ endif
 
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libmalicore.bc
 LOCAL_MODULE_OWNER := arm
@@ -202,7 +192,6 @@ endif
 endif
 
 #ko
-include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := mali.ko
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES

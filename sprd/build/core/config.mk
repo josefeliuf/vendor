@@ -9,7 +9,7 @@ endif
 include $(APPLY_PRODUCT_REVISION)
 
 VENDOR_PLATFORM := vendor/sprd/platform
-CLEAR_VARS := $(SPRD_BUILD_SYSTEM)/clear_vars.mk $(CLEAR_VARS)
+# CLEAR_VARS := $(SPRD_BUILD_SYSTEM)/clear_vars.mk $(CLEAR_VARS)
 BUILD_ADDON_PACKAGE := $(SPRD_BUILD_SYSTEM)/addon_package.mk
 BUILD_PACKAGE := $(wildcard $(SPRD_BUILD_SYSTEM)/package.mk) $(BUILD_PACKAGE)
 BUILD_JAVA_LIBRARY := $(wildcard $(SPRD_BUILD_SYSTEM)/java_library.mk) $(BUILD_JAVA_LIBRARY)

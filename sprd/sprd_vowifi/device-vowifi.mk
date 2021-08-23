@@ -3,7 +3,7 @@ VOWIFI_KAIOS_PRODUCT := true
 MY_PATH := vendor/sprd/sprd_vowifi
 OUT_PATH := /system/etc/com.spreadtrum.vowifi
 
-$(shell mkdir -p $(OUT)/$(OUT_PATH))
+$(shell mkdir -p $(OUT_DIR)/$(OUT_PATH))
 
 # add for vowifi source code module
 

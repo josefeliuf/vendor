@@ -1,4 +1,4 @@
-SPRD_BUILD_SYSTEM := vendor/sprd/build/core
+# SPRD_BUILD_SYSTEM := vendor/sprd/build/core
 
 # ensuring use sprd feature control
 ifneq ($(wildcard vendor/sprd/feature_configs),)
